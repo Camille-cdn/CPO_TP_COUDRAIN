@@ -47,6 +47,10 @@ public class Calculator {
        if (operateur ==5)
        result = operande1 % operande2;
       System.out.println("Le résultat est "+ result);
+      if (operateur<=1)
+      System.out.println("Il y a une erreur");
+      if (operateur>=5)
+          System.out.println("Il y a une erreur");
     }
     
 }
