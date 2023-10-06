@@ -22,7 +22,7 @@ public class TP_convertisseur_COUDRAIN {
         System.out.println("\n Bonjour saisissez une valeur:");
         double var1 = sc.nextDouble();
         System.out.println("valeur saisie: "+var1);
-        System.out.println("Saisissez la conversion que vous souhaiter effectuer : \n 1)De Celcius vers Kelvin \n 2)De Kelvin vers Celcius \n De fahrenheit vers Celcius \n De Celcius vers Fahrenheit \n Kelvin vers Fahrenheit \n De Fahrenheit vers Kelvin ");
+        System.out.println("Saisissez la conversion que vous souhaiter effectuer : \n 1)De Celcius vers Kelvin \n 2)De Kelvin vers Celcius \n 3)De fahrenheit vers Celcius \n 4)De Celcius vers Fahrenheit \n 5)De Kelvin vers Fahrenheit \n 6)De Fahrenheit vers Kelvin ");
         int saisieconv=sc.nextInt();
         if (saisieconv==1){
             double a =CelciusVersKelvin(var1);
