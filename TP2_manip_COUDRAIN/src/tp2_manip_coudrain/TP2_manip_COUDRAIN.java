@@ -22,6 +22,7 @@ public class TP2_manip_COUDRAIN {
        System.out.println("nb de calories de Assiette 2 : "+assiette2.nbCalories);
        System.out.println("nb de calories de Assiette 3 : "+assiette3.nbCalories);
        
+       
     }
     
 }
