@@ -4,7 +4,9 @@ TDA2
 TP3
 23 octobre 2023
 */
-package tp3_heroic_fantasy_coudrain;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -20,9 +22,7 @@ public class Epee extends Arme{
     
     @Override
     public String toString() {
-    String chaine;
-    chaine= Nom+""+NiveauAttaque+""+Finesse;
-    return chaine;
+    return "Epée{" + "Nom = " + Nom + "\n Niveau d'attaque = " + NiveauAttaque + "\n Finesse = " + Finesse + "}";
     }
     
 }

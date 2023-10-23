@@ -4,7 +4,7 @@ TDA2
 TP3
 23 octobre 2023
 */
-package tp3_heroic_fantasy_coudrain;
+package Armes;
 
 /**
  *
@@ -13,10 +13,12 @@ package tp3_heroic_fantasy_coudrain;
 public abstract class Arme {
     String Nom;
     int NiveauAttaque=100;
+    Personnage Proprietaire;
     
     public Arme(String nom, int niveauAttaque){
         Nom=nom;
         NiveauAttaque=niveauAttaque;
+        Proprietaire=null;
     }
     
     

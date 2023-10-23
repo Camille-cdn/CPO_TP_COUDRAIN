@@ -4,7 +4,9 @@ TDA2
 TP3
 23 octobre 2023
 */
-package tp3_heroic_fantasy_coudrain;
+package Armes;
+
+import Armes.Arme;
 
 /**
  *
@@ -20,8 +22,6 @@ public class Baton extends Arme{
     
     @Override
     public String toString() {
-    String chaine;
-    chaine= Nom+""+NiveauAttaque+""+Age;
-    return chaine;
-    }
+         return "Baton{" + "Nom = " + Nom + "\n Niveau d'attaque = " + NiveauAttaque + "\n Age = " + Age + "}";
+    } 
 }
