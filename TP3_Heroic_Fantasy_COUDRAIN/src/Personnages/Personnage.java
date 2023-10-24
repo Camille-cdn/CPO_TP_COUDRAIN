@@ -9,6 +9,7 @@ package Personnages;
 import Armes.*;
 import java.util.ArrayList;
 
+
 /**
  *
  * @author camillecoudrain
@@ -16,7 +17,10 @@ import java.util.ArrayList;
 public abstract class Personnage {
     String Nom;
     int NiveauDeVie=0;
-    int nbArmes=0;
+    String Armeportee=null;
+    
+    ArrayList<Arme> TabArme = new ArrayList<>();
+       
     
     public Personnage(String nom, int niveauDeVie){
         Nom=nom;
@@ -31,15 +35,36 @@ public abstract class Personnage {
     return chaine;
     }
     
-    ArrayList<Arme> TabArme = new ArrayList<>();
-        TabArme.add(epee1);
-        TabArme.add(epee2);
-        TabArme.add(baton1);
-        TabArme.add(baton2);
+    
    
+        public boolean ajouter_arme(Arme arme_a_ajouter){
+            if(this.TabArme.size() <=5){
+                TabArme.add(arme_a_ajouter);
+                return true;
+            }if (this.TabArme.size()==5){
+                return false;
+            }
+            return false;
+        }
         
+        public void Arme_en_main(){
+            System.out.println("Voici les armes disponibles, quel sera votre choix?");
+            for(int i=0;i<this.TabArme.size();i++){
+                System.out.println("("+ i + ")" + this.TabArme.get(i));
+            }
+            
+            
+            
+            
+        }
 
+    public String getArmeportee() {
+        return Armeportee;
     }
+        }
+
+
+
     
 
     

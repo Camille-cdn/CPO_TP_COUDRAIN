@@ -13,12 +13,12 @@ package Armes;
 public abstract class Arme {
     String Nom;
     int NiveauAttaque=100;
-    Personnage Proprietaire;
+   
     
     public Arme(String nom, int niveauAttaque){
         Nom=nom;
         NiveauAttaque=niveauAttaque;
-        Proprietaire=null;
+       
     }
     
     
