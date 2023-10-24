@@ -6,7 +6,7 @@ TP3
 */
 package Personnages;
 
-import Personnages.Personnage;
+
 
 /**
  *
