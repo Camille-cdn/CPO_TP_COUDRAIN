@@ -25,7 +25,7 @@ public abstract class Arme {
     @Override
     public String toString() {
     String chaine;
-    chaine= Nom+""+NiveauAttaque;
+    chaine= "Nom : " + Nom +" "+ "Niveau d'attaque : " + NiveauAttaque;
     return chaine;
     }
     

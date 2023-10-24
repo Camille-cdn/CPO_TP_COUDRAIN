@@ -47,20 +47,7 @@ public abstract class Personnage {
             return false;
         }
 
-    public String getArme_en_main() {
-        return Arme_en_main;
-    }
-        
-        public void equiper_arme (Arme arme){
-        for (int i=0 ; i<TabArme.size() ; i++){
-            if (TabArme.get(i).equals(arme)){
-                Arme_en_main=TabArme.get(i);
-                System.out.println("L'arme à été trouvée et équipée");
-                return;
-            }
-        }  
-        System.out.println("L'arme n'a pas été trouvée");
-        }
+}
             
             
             
