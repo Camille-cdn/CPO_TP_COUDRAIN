@@ -1,7 +1,7 @@
 /*
 Camille COUDRAIN
 TDA
-TP3
+projet
 25 octobre 2023
  */
 package lightoff_coudrain_version_console;
@@ -20,7 +20,7 @@ public class CelluleLumineuse {
      * @param etat L'état initial de la cellule lumineuse. true pour allumée et
      * false pour éteinte.
      */
-    public CelluleLumineuse(boolean etat) {
+    public CelluleLumineuse() {
        this.etat = false;
     }
     /**
@@ -52,8 +52,8 @@ public class CelluleLumineuse {
      * @param cellule L'objet CelluleLumineuse à vérifier.
      * @return renvoie true si la cellule est éteinte, sinon false.
      */
-    public boolean estEteint(boolean cellule) {
-        if (cellule == false) {
+    public boolean estEteint() {
+        if (etat == false) {
             return true;
         } else {
             return false;
@@ -66,8 +66,8 @@ public class CelluleLumineuse {
      *
      * @return true si la cellule est allumée, sinon false.
      */
-    public boolean getEtat(boolean cellule) {
-        if (cellule = true) {
+    public boolean getEtat() {
+        if (etat = true) {
             return true;
         } else {
             return false;
@@ -84,13 +84,9 @@ public class CelluleLumineuse {
        return etat ? "X" : "O";
     }
  
-    boolean estEteint() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
  
-    boolean getEtat() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+ 
+   
 }
  
  
