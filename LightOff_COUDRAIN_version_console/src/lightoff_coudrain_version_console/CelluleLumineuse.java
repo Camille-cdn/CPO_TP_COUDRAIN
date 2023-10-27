@@ -13,47 +13,40 @@ package lightoff_coudrain_version_console;
 public class CelluleLumineuse {
     private boolean etat;
     
-   /**
-     * Création d'un nouvel objet , en lui attribuant un état initial spécifié
-     * par le paramètre etat.
-     *
-     * @param etat L'état initial de la cellule lumineuse. true pour allumée et
-     * false pour éteinte.
-     */
+/**
+ * Constructeur par défaut de la classe CelluleLumineuse.
+ * Crée une nouvelle instance de CelluleLumineuse avec un état initial éteint (false).
+ */
     public CelluleLumineuse() {
        this.etat = false;
     }
     /**
-     *
-     * Inverse l'état de la cellule lumineuse. Si la cellule est actuellement
-     * allumée, elle sera éteinte, et vice versa.
-     */
+ * Active ou désactive l'état de la cellule lumineuse.
+ * Si la cellule est allumée, elle est éteinte, et si elle est éteinte, elle est allumée.
+ */
     public void activerCellule() {
-        if (etat == true) {
-            etat = false;
+        if (this.etat == true) {
+            this.etat = false;
         } else {
-            etat = true;
+            this.etat = true;
         }
  
     }
  
     /**
-     * Éteint la cellule lumineuse si elle est actuellement allumée.
-     */
+ * Éteint la cellule lumineuse en mettant son état à "éteint" (false).
+ */
     public void eteindreCellule() {
-        if (etat == true) {
-            etat = false;
-        }
+        this.etat=false;
     }
- 
-    /**
-     * Verifie si la cellule lumineuse est éteinte.
-     *
-     * @param cellule L'objet CelluleLumineuse à vérifier.
-     * @return renvoie true si la cellule est éteinte, sinon false.
-     */
+    
+ /**
+ * Vérifie si la cellule lumineuse est éteinte.
+ *
+ * @return true si la cellule est éteinte, sinon false.
+ */
     public boolean estEteint() {
-        if (etat == false) {
+        if (this.etat == false) {
             return true;
         } else {
             return false;
@@ -62,16 +55,12 @@ public class CelluleLumineuse {
     }
  
     /**
-     * Obtient l'état de la cellule lumineuse.
-     *
-     * @return true si la cellule est allumée, sinon false.
-     */
+ * Renvoie l'état actuel de la cellule lumineuse.
+ *
+ * @return true si la cellule est allumée, sinon false si elle est éteinte.
+ */
     public boolean getEtat() {
-        if (etat = true) {
-            return true;
-        } else {
-            return false;
-        }
+        return etat;
     }
  
    /**
@@ -81,13 +70,19 @@ public class CelluleLumineuse {
 */
     @Override
     public String toString() {
-       return etat ? "X" : "O";
+        if (etat== true){
+            return "X";
+        } else if (etat == false){
+        
+        return "O";
+        }
+        return null;
+    }
     }
  
  
- 
    
-}
+
  
  
 
