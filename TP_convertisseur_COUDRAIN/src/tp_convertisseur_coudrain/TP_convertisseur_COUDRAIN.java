@@ -19,32 +19,35 @@ public class TP_convertisseur_COUDRAIN {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("\n Bonjour saisissez une valeur:");
+        System.out.println("\nBonjour saisissez une valeur:");
         double var1 = sc.nextDouble();
         System.out.println("valeur saisie: "+var1);
         System.out.println("Saisissez la conversion que vous souhaiter effectuer : \n 1)De Celcius vers Kelvin \n 2)De Kelvin vers Celcius \n 3)De fahrenheit vers Celcius \n 4)De Celcius vers Fahrenheit \n 5)De Kelvin vers Fahrenheit \n 6)De Fahrenheit vers Kelvin ");
-        int saisieconv=sc.nextInt();
-        if (saisieconv==1){
+        int saisie_valeur=sc.nextInt();
+       
+        if (saisie_valeur==1){
             double a =CelciusVersKelvin(var1);
             System.out.println(a);
         }
-        if (saisieconv==2){
+        
+        if (saisie_valeur==2){
         double b =KelvinVersCelcius(var1);
         System.out.println(b);
         }
-        if (saisieconv==3){
+        
+        if (saisie_valeur==3){
         double c =FahrenheitVersCelcius(var1);
         System.out.println(c);
         }
-        if(saisieconv==4){
+        if(saisie_valeur==4){
         double d =CelciusVersFahrenheit(var1);
         System.out.println(d);
         }
-        if (saisieconv==5){
+        if (saisie_valeur==5){
         double e=KelvinVersFahrenheit(var1);
          System.out.println(e);
         }
-        if (saisieconv==6){
+        if (saisie_valeur==6){
         double f=FahrenheitVersKelvin(var1);
         System.out.println(f);
         }
